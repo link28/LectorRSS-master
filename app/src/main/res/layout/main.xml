@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+  android:id="@+id/LL01" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<RadioGroup
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+		<RadioButton
+			android:text="Congreso del estado"
+			android:layout_width="118dp"
+			android:layout_height="59dp"
+			android:id="@+id/rbCongreso"
+			android:layout_weight="0.08"
+			android:onClick="opciones" />
+
+		<RadioButton
+			android:text="El financiero"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/rbFinanciero"
+			android:layout_weight="0.15"
+			android:onClick="opciones" />
+
+		<RadioButton
+			android:text="Lider en Deportes"
+			android:layout_width="114dp"
+			android:layout_height="63dp"
+			android:id="@+id/rbDeportes"
+			android:onClick="opciones" />
+	</RadioGroup>
+
+
+	<LinearLayout
+      android:id="@+id/LL02" 
+      android:orientation="horizontal"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content">
+		<TextView
+		  android:id="@+id/tvLoadTip"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:text="Presione el botón para cargar datos">
+		</TextView>      
+		<Button
+		  android:id="@+id/btnLoad"
+		  android:layout_width="154dp"
+		  android:layout_height="wrap_content"
+		  android:text="Enviar">
+		</Button>
+    </LinearLayout>
+    
+	<ListView
+	  android:id="@+id/lstData" 
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+	  android:padding="5dip">
+	</ListView>	
+
+</LinearLayout>
+ 
